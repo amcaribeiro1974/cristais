@@ -1,9 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, Send, MapPin, Globe } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Contact = () => {
@@ -87,10 +87,15 @@ export const Contact = () => {
             
             <div className="mt-8 p-6 bg-eco-50 rounded-lg">
               <div className="flex flex-col md:flex-row items-center gap-4">
-                <Avatar className={`${isMobile ? 'w-20 h-20' : 'w-24 h-24'} border-2 border-eco-100`}>
-                  <AvatarImage src="/lovable-uploads/4c686c0c-bbf4-4d78-ab5f-8e69912e6924.png" alt="Clara - Assistente Virtual" />
-                  <AvatarFallback className="bg-eco-100 text-eco-700 text-lg">CR</AvatarFallback>
-                </Avatar>
+                <div className={`${isMobile ? 'w-20' : 'w-24'}`}>
+                  <AspectRatio ratio={1/1} className="overflow-hidden rounded-lg">
+                    <img 
+                      src="/lovable-uploads/4c686c0c-bbf4-4d78-ab5f-8e69912e6924.png" 
+                      alt="Clara - Assistente Virtual" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </div>
                 <div>
                   <h4 className="font-semibold text-eco-800 mb-2">Conheça a Clara</h4>
                   <p className="text-gray-600 mb-4">
