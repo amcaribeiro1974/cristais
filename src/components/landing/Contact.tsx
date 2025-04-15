@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, Send, MapPin, Globe } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Contact = () => {
@@ -86,17 +84,15 @@ export const Contact = () => {
             </div>
             
             <div className="mt-8 p-6 bg-eco-50 rounded-lg">
-              <div className="flex flex-col md:flex-row items-center gap-4">
-                <div className={`${isMobile ? 'w-20' : 'w-24'}`}>
-                  <AspectRatio ratio={1/1} className="overflow-hidden rounded-lg">
-                    <img 
-                      src="/lovable-uploads/4c686c0c-bbf4-4d78-ab5f-8e69912e6924.png" 
-                      alt="Clara - Assistente Virtual" 
-                      className="object-cover w-full h-full"
-                    />
-                  </AspectRatio>
+              <div className={`flex flex-col ${isMobile ? 'items-center text-center' : 'md:flex-row items-start'} gap-6`}>
+                <div className={`${isMobile ? 'w-2/3' : 'w-1/3'}`}>
+                  <img 
+                    src="/lovable-uploads/4c686c0c-bbf4-4d78-ab5f-8e69912e6924.png" 
+                    alt="Clara - Assistente Virtual" 
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
                 </div>
-                <div>
+                <div className={`${isMobile ? 'w-full' : 'w-2/3'}`}>
                   <h4 className="font-semibold text-eco-800 mb-2">Conheça a Clara</h4>
                   <p className="text-gray-600 mb-4">
                     Nossa assistente virtual especializada em gestão de resíduos, 
