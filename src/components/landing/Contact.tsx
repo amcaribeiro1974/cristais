@@ -87,19 +87,19 @@ export const Contact = () => {
               <div className={`flex flex-col ${isMobile ? 'items-center text-center' : 'md:flex-row items-start'} gap-6`}>
                 <div className={`${isMobile ? 'w-2/3' : 'w-1/3'}`}>
                   <img 
-                    src="/lovable-uploads/4c686c0c-bbf4-4d78-ab5f-8e69912e6924.png" 
-                    alt="Clara - Assistente Virtual" 
+                    src="/lovable-uploads/d836feb4-2522-48ce-8866-c997a3a8a49e.png" 
+                    alt="Cris - Assistente de Gestão de Resíduos" 
                     className="w-full h-auto object-contain rounded-lg"
                   />
                 </div>
                 <div className={`${isMobile ? 'w-full' : 'w-2/3'}`}>
-                  <h4 className="font-semibold text-eco-800 mb-2">Conheça a Clara</h4>
+                  <h4 className="font-semibold text-eco-800 mb-2">Conheça a Cris</h4>
                   <p className="text-gray-600 mb-4">
-                    Nossa assistente virtual especializada em gestão de resíduos, 
+                    Nossa assistente especializada em Gestão de Resíduos, 
                     pronta para tirar suas dúvidas e agendar serviços.
                   </p>
                   <Button variant="outline" className="border-eco-600 text-eco-700 hover:bg-eco-100">
-                    Falar com a Clara
+                    Falar com a Cris
                   </Button>
                 </div>
               </div>
