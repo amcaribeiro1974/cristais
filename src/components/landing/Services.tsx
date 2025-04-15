@@ -1,12 +1,12 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, Factory, ShoppingBag, Recycle } from "lucide-react";
+import { Activity, Factory, ShoppingBag, Recycle, Truck, FileText } from "lucide-react";
 
 export const Services = () => {
   const services = [
     {
-      title: "Gestão de Resíduos de Serviços de Saúde",
-      description: "Coleta porta a porta com caminhão tipo baú. Atendendo clínicas, hospitais, laboratórios e serviços de saúde humana e animal.",
+      title: "Gestão de Resíduos",
+      description: "Disponibilizamos as melhores práticas no gerenciamento de resíduos sólidos Classe I e II - NBR 10.004 incluindo os gerados na rede de saúde humana e animal.",
       icon: Activity,
       details: [
         "Eco Box Cristais",
@@ -15,33 +15,53 @@ export const Services = () => {
       ]
     },
     {
-      title: "Gestão de Resíduos Industriais",
-      description: "Atendemos conforme legislação CONAMA 313, para óleo, graxa, tintas e fluídos contaminados.",
-      icon: Factory,
+      title: "Transporte de Cargas Perigosas",
+      description: "Transporte rodoviário de produtos perigosos seguindo rigorosamente as normas da ANTT, garantindo a segurança pública e conformidade regulatória.",
+      icon: Truck,
       details: [
-        "Tambores metálicos (200L)",
-        "Caixas estacionárias (5 m³)",
-        "Coleta por quilo, porta a porta",
+        "Conformidade com regulamentos ANTT",
+        "Veículos especializados",
+        "Equipe treinada e certificada",
       ]
     },
     {
-      title: "Gestão de Resíduos Classe 2",
-      description: "Serviços para estabelecimentos comerciais e grandes geradores, com coleta porta a porta.",
+      title: "Consultoria Ambiental",
+      description: "Somos uma empresa qualificada e dedicada à elaboração e execução de projetos especializados na área do meio ambiente.",
+      icon: FileText,
+      details: [
+        "Projetos ambientais",
+        "Licenciamento ambiental",
+        "Planos de gerenciamento de resíduos",
+      ]
+    },
+    {
+      title: "Aluguel de Equipamentos",
+      description: "Oferecemos aluguel de caixas para resíduos perigosos (classe I) e não perigosos (classe II), proporcionando soluções seguras e eficientes.",
       icon: ShoppingBag,
       details: [
-        "Caixas de 1 m³",
-        "Coleta com caminhões compactadores",
+        "Caixas para resíduos classe I e II",
+        "Caixas compactadoras para condomínios",
+        "Caixas para resíduos da construção civil",
+      ]
+    },
+    {
+      title: "Transbordo de Resíduos",
+      description: "Oferecemos soluções de gerenciamento de resíduos sólidos Classe I e II, seguindo as diretrizes da NBR 10.004.",
+      icon: Factory,
+      details: [
+        "Transferência entre veículos",
+        "Otimização logística",
         "Certificado de destinação final",
       ]
     },
     {
-      title: "Outros Serviços",
-      description: "Soluções complementares para diversos tipos de resíduos e necessidades específicas.",
+      title: "Gestão de Resíduos Industriais",
+      description: "Atendemos conforme legislação CONAMA 313, para óleo, graxa, tintas e fluídos contaminados.",
       icon: Recycle,
       details: [
-        "Aluguel de caixas compactadoras",
-        "Caixas para resíduos da construção civil",
-        "Transbordo de resíduos",
+        "Tambores metálicos (200L)",
+        "Caixas estacionárias (5 m³)",
+        "Coleta por quilo, porta a porta",
       ]
     }
   ];
@@ -52,11 +72,11 @@ export const Services = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-800">Nossos Serviços</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Oferecemos soluções completas em gestão de resíduos para diferentes segmentos
+            Temos tudo que sua empresa precisa: coleta, transporte, tratamento, destino final e licença
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="bg-white transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <CardHeader className="pb-2">

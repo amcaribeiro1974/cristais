@@ -51,7 +51,8 @@ export const Contact = () => {
                 <Phone className="h-6 w-6 text-eco-600 mr-3 mt-1" />
                 <div>
                   <h4 className="font-medium text-gray-800">Telefone</h4>
-                  <p className="text-gray-600">(98) 3303-8585</p>
+                  <p className="text-gray-600">98 99154-6787</p>
+                  <p className="text-gray-600">98 3012-5141</p>
                 </div>
               </div>
               
@@ -59,7 +60,7 @@ export const Contact = () => {
                 <Mail className="h-6 w-6 text-eco-600 mr-3 mt-1" />
                 <div>
                   <h4 className="font-medium text-gray-800">Email</h4>
-                  <p className="text-gray-600">contato@cristais.eco.br</p>
+                  <p className="text-gray-600">comercial@cristais.eco.br</p>
                 </div>
               </div>
               
@@ -67,15 +68,15 @@ export const Contact = () => {
                 <MapPin className="h-6 w-6 text-eco-600 mr-3 mt-1" />
                 <div>
                   <h4 className="font-medium text-gray-800">Endereço</h4>
-                  <p className="text-gray-600">São Luís, Maranhão</p>
+                  <p className="text-gray-600">Rua 12, Qd.F, Lote 04, Módulo A, Distrito Industrial Maracanã, São Luís – MA</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Globe className="h-6 w-6 text-eco-600 mr-3 mt-1" />
                 <div>
-                  <h4 className="font-medium text-gray-800">Site</h4>
-                  <p className="text-gray-600">https://cristais.eco.br/</p>
+                  <h4 className="font-medium text-gray-800">Instagram</h4>
+                  <p className="text-gray-600">@cristaisresiduos</p>
                 </div>
               </div>
             </div>

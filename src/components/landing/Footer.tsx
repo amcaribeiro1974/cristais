@@ -10,8 +10,8 @@ export const Footer = () => {
           <div>
             <h3 className="font-bold text-xl mb-4 text-eco-400">Cristais</h3>
             <p className="text-gray-400 mb-4">
-              Soluções ambientais com foco na gestão de resíduos sólidos, 
-              minimizando o impacto ambiental da sociedade moderna.
+              Soluções ambientais que atendem integralmente às legislações federais,
+              estaduais e municipais.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition">
@@ -20,7 +20,7 @@ export const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="mailto:contato@cristais.eco.br" className="text-gray-400 hover:text-white transition">
+              <a href="mailto:comercial@cristais.eco.br" className="text-gray-400 hover:text-white transition">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -30,16 +30,16 @@ export const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Serviços</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-eco-400 transition">Resíduos de Saúde</a>
+                <a href="#servicos" className="text-gray-400 hover:text-eco-400 transition">Gestão de Resíduos</a>
               </li>
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-eco-400 transition">Resíduos Industriais</a>
+                <a href="#servicos" className="text-gray-400 hover:text-eco-400 transition">Transporte de Cargas Perigosas</a>
               </li>
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-eco-400 transition">Resíduos Classe 2</a>
+                <a href="#servicos" className="text-gray-400 hover:text-eco-400 transition">Consultoria Ambiental</a>
               </li>
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-eco-400 transition">Serviços Especiais</a>
+                <a href="#servicos" className="text-gray-400 hover:text-eco-400 transition">Aluguel de Equipamentos</a>
               </li>
             </ul>
           </div>
@@ -67,23 +67,24 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-eco-400 mr-2 mt-1" />
-                <span className="text-gray-400">(98) 3303-8585</span>
+                <div>
+                  <p className="text-gray-400">98 99154-6787</p>
+                  <p className="text-gray-400">98 3012-5141</p>
+                </div>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-eco-400 mr-2 mt-1" />
-                <span className="text-gray-400">contato@cristais.eco.br</span>
+                <span className="text-gray-400">comercial@cristais.eco.br</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-eco-400 mr-2 mt-1" />
-                <span className="text-gray-400">São Luís, Maranhão</span>
+                <span className="text-gray-400">Rua 12, Qd.F, Lote 04, Módulo A, Distrito Industrial Maracanã, São Luís – MA</span>
+              </li>
+              <li className="flex items-start">
+                <Instagram className="h-5 w-5 text-eco-400 mr-2 mt-1" />
+                <span className="text-gray-400">@cristaisresiduos</span>
               </li>
             </ul>
-            <Button className="mt-4 bg-eco-600 hover:bg-eco-700 text-white">
-              <a href="https://cristais.eco.br/" className="flex items-center" target="_blank" rel="noopener noreferrer">
-                Visitar Site Oficial
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
           </div>
         </div>
         

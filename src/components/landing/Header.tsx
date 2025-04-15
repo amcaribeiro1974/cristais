@@ -24,8 +24,11 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-eco-700">Cristais</span>
-            <span className="text-sm text-gray-500 ml-2">Soluções Ambientais</span>
+            <img 
+              src="/lovable-uploads/aad8faed-cb1b-4468-b1cb-d38429c8628c.png" 
+              alt="Cristais Soluções Ambientais" 
+              className="h-12 mr-2"
+            />
           </div>
           
           {/* Desktop Navigation */}

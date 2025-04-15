@@ -1,10 +1,18 @@
 
-import { Building, Home, Landmark, Hospital, Beaker, Dog, School, ShoppingCart } from "lucide-react";
+import { Building, Home, Landmark, Hospital, Beaker, Dog, School, ShoppingCart, Needle, HeartPulse, Flask, PenTool, GraduationCap, Pill, TestTubes, Syringe } from "lucide-react";
 
 export const Clients = () => {
   const clientTypes = [
     { icon: Hospital, label: "Hospitais e Clínicas" },
-    { icon: Beaker, label: "Laboratórios" },
+    { icon: Beaker, label: "Laboratórios Analíticos" },
+    { icon: HeartPulse, label: "Necrotérios e Funerárias" },
+    { icon: Pill, label: "Drogarias e Farmácias" },
+    { icon: GraduationCap, label: "Ensino e Pesquisa" },
+    { icon: Flask, label: "Distribuidores Farmacêuticos" },
+    { icon: TestTubes, label: "Diagnóstico In Vitro" },
+    { icon: Syringe, label: "Atendimento Móvel" },
+    { icon: Needle, label: "Serviços de Acupuntura" },
+    { icon: PenTool, label: "Serviços de Tatuagem" },
     { icon: Dog, label: "Pet Shops" },
     { icon: Building, label: "Indústrias" },
     { icon: Landmark, label: "Condomínios" },

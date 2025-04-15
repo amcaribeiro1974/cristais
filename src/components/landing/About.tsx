@@ -7,12 +7,16 @@ export const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
+            <span className="text-sm font-semibold text-water-600 uppercase tracking-wider">Genuinamente Maranhense</span>
             <h2 className="text-3xl font-bold mb-6 text-gray-800">Sobre a Cristais Soluções Ambientais</h2>
             <p className="text-gray-600 mb-6">
-              A Cristais nasceu da homenagem aos filhos Cristino e Thays, 
-              e se dedica a oferecer soluções que minimizem os impactos 
-              ambientais da sociedade moderna, com foco especial na gestão 
-              de resíduos sólidos gerados por serviços de saúde.
+              Somos uma empresa genuinamente maranhense, dedicada à segurança ambiental, 
+              flexibilidade e eficiência. Contamos com uma equipe experiente, com mais de 
+              17 anos de atuação no mercado.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Nosso portfólio inclui soluções ambientais que atendem integralmente às 
+              legislações federais, estaduais e municipais.
             </p>
             
             <div className="space-y-4 mb-6">
@@ -49,6 +53,14 @@ export const About = () => {
               <li className="flex items-start">
                 <Check className="h-6 w-6 text-eco-600 mr-2 mt-1 flex-shrink-0" />
                 <span className="text-gray-700">Flexibilidade com segurança e preço justo</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-6 w-6 text-eco-600 mr-2 mt-1 flex-shrink-0" />
+                <span className="text-gray-700">Priorizamos a personalização em cada projeto</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="h-6 w-6 text-eco-600 mr-2 mt-1 flex-shrink-0" />
+                <span className="text-gray-700">Compromisso constante com a inovação e práticas sustentáveis</span>
               </li>
             </ul>
           </div>
