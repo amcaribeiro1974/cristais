@@ -2,9 +2,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -27,7 +29,7 @@ export const Header = () => {
             <img 
               src="/lovable-uploads/aad8faed-cb1b-4468-b1cb-d38429c8628c.png" 
               alt="Cristais Soluções Ambientais" 
-              className="h-12 mr-2"
+              className={isMobile ? "h-10" : "h-12 mr-2"}
             />
           </div>
           
