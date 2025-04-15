@@ -3,8 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, Send, MapPin, Globe } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Contact = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <section className="py-16 bg-white" id="contato">
       <div className="container mx-auto px-4">
@@ -82,14 +86,22 @@ export const Contact = () => {
             </div>
             
             <div className="mt-8 p-6 bg-eco-50 rounded-lg">
-              <h4 className="font-semibold text-eco-800 mb-2">Conheça a Clara</h4>
-              <p className="text-gray-600 mb-4">
-                Nossa assistente virtual especializada em gestão de resíduos, 
-                pronta para tirar suas dúvidas e agendar serviços.
-              </p>
-              <Button variant="outline" className="border-eco-600 text-eco-700 hover:bg-eco-100">
-                Falar com a Clara
-              </Button>
+              <div className="flex flex-col md:flex-row items-center gap-4">
+                <Avatar className={`${isMobile ? 'w-20 h-20' : 'w-24 h-24'} border-2 border-eco-100`}>
+                  <AvatarImage src="/lovable-uploads/4c686c0c-bbf4-4d78-ab5f-8e69912e6924.png" alt="Clara - Assistente Virtual" />
+                  <AvatarFallback className="bg-eco-100 text-eco-700 text-lg">CR</AvatarFallback>
+                </Avatar>
+                <div>
+                  <h4 className="font-semibold text-eco-800 mb-2">Conheça a Clara</h4>
+                  <p className="text-gray-600 mb-4">
+                    Nossa assistente virtual especializada em gestão de resíduos, 
+                    pronta para tirar suas dúvidas e agendar serviços.
+                  </p>
+                  <Button variant="outline" className="border-eco-600 text-eco-700 hover:bg-eco-100">
+                    Falar com a Clara
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
