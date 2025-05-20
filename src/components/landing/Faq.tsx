@@ -13,11 +13,11 @@ export const Faq = () => {
     },
     {
       question: "Atendem minha cidade?",
-      answer: "Se estiver no Maranhão, sim. Também aceitamos resíduos de outros estados, desde que entregues no Maranhão."
+      answer: "Se estiver no Maranhão, sim. Também aceitamos resíduos de outros estados vizinhos."
     },
     {
       question: "Como agendo a coleta?",
-      answer: "Através da assistente virtual Clara, via WhatsApp ou site."
+      answer: "Através da assistente virtual Cris, via WhatsApp."
     },
     {
       question: "Como recebo meu certificado de destinação?",

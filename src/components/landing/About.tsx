@@ -12,7 +12,7 @@ export const About = () => {
             <p className="text-gray-600 mb-6">
               Somos uma empresa genuinamente maranhense, dedicada à segurança ambiental, 
               flexibilidade e eficiência. Contamos com uma equipe experiente, com mais de 
-              17 anos de atuação no mercado.
+              20 anos de atuação no mercado.
             </p>
             <p className="text-gray-600 mb-6">
               Nosso portfólio inclui soluções ambientais que atendem integralmente às 

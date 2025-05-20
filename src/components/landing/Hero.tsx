@@ -28,6 +28,9 @@ export const Hero = () => {
             <Button variant="outline" className="border-water-600 text-water-700 hover:bg-water-50 px-8 py-6 text-lg">
               Conheça Nossos Serviços
             </Button>
+            <Button variant="outline" className="border-water-600 text-water-700 hover:bg-water-50 px-8 py-6 text-lg">
+              Falar com um Consultor
+            </Button>
           </div>
         </div>
       </div>
