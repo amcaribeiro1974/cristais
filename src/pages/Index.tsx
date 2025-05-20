@@ -9,6 +9,7 @@ import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { CTA } from "@/components/landing/CTA";
 import { Portfolio } from "@/components/landing/Portfolio";
+import { CrisAssistant } from "@/components/landing/CrisAssistant";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <Services />
         <Coverage />
         <Portfolio />
+        <CrisAssistant />
         <Clients />
         <CTA />
         <Faq />

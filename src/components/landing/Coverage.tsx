@@ -20,9 +20,6 @@ export const Coverage = () => {
               Se você gera mais de 200L/dia de resíduos, a legislação exige 
               que você contrate um serviço especializado.
             </p>
-            <p className="text-gray-600 font-medium">
-              Também aceitamos resíduos de outros estados, desde que entregues no Maranhão.
-            </p>
           </div>
         </div>
       </div>
