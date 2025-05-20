@@ -27,9 +27,9 @@ export const Header = () => {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/aad8faed-cb1b-4468-b1cb-d38429c8628c.png" 
+              src="/lovable-uploads/fe266214-e2af-4ac3-b463-bd473152d94d.png" 
               alt="Cristais Soluções Ambientais" 
-              className={isMobile ? "h-10" : "h-12 mr-2"}
+              className={isMobile ? "h-12" : "h-16"}
             />
           </div>
           

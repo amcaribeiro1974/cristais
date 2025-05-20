@@ -8,7 +8,13 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bold text-xl mb-4 text-eco-400">Cristais</h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/2068a95d-9450-4637-af6c-ec9d8aeefa98.png" 
+                alt="Cristais Soluções Ambientais" 
+                className="h-20"
+              />
+            </div>
             <p className="text-gray-400 mb-4">
               Soluções ambientais que atendem integralmente às legislações federais,
               estaduais e municipais.
