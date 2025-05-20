@@ -62,9 +62,6 @@ export const Footer = () => {
               <li>
                 <a href="#faq" className="text-gray-400 hover:text-eco-400 transition">Perguntas Frequentes</a>
               </li>
-              <li>
-                <a href="#contato" className="text-gray-400 hover:text-eco-400 transition">Contato</a>
-              </li>
             </ul>
           </div>
           
