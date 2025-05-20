@@ -8,11 +8,6 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb')] bg-cover bg-center opacity-10"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-4 inline-block bg-water-100 px-4 py-2 rounded-full">
-            <p className="text-water-800 font-medium text-sm md:text-base">
-              Profissionais com mais de 20 anos de experiência
-            </p>
-          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-800">
             Gestão Responsável de Resíduos
           </h1>
