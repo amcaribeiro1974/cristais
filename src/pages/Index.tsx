@@ -9,6 +9,7 @@ import { Contact } from "@/components/landing/Contact";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { CTA } from "@/components/landing/CTA";
+import { Portfolio } from "@/components/landing/Portfolio";
 
 const Index = () => {
   return (
@@ -18,8 +19,9 @@ const Index = () => {
         <Hero />
         <About />
         <Services />
-        <Clients />
         <Coverage />
+        <Portfolio />
+        <Clients />
         <CTA />
         <Faq />
         <Contact />

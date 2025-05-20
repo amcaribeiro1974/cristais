@@ -7,10 +7,10 @@ export const Coverage = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <MapPin className="h-12 w-12 text-water-600 mx-auto mb-4" />
-          <h2 className="text-3xl font-bold mb-4 text-gray-800">Atuação no Maranhão</h2>
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">Atuação Regional</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Nossa atuação comercial é focada no estado do Maranhão, 
-            com visão de cobrir 80% do estado e expandir para o Norte e Nordeste.
+            Atendemos todo o Maranhão e estados vizinhos, com visão de 
+            cobrir 80% do estado e expandir para o Norte e Nordeste.
           </p>
           
           <div className="bg-white p-6 rounded-lg shadow-lg">
