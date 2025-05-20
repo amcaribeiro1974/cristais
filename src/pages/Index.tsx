@@ -13,7 +13,7 @@ import { CrisAssistant } from "@/components/landing/CrisAssistant";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
       <Header />
       <main className="flex-grow">
         <Hero />

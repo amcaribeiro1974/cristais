@@ -4,7 +4,7 @@ import * as React from "react"
 const MOBILE_BREAKPOINT = 768
 
 export function useIsMobile() {
-  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined)
+  const [isMobile, setIsMobile] = React.useState<boolean>(window.innerWidth < MOBILE_BREAKPOINT)
 
   React.useEffect(() => {
     // Initial check
@@ -12,16 +12,13 @@ export function useIsMobile() {
       setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
     }
     
-    // Check on mount
-    checkMobile()
-    
     // Add resize listener
     const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
     
     // Modern browsers use addEventListener
     if (mql.addEventListener) {
-      mql.addEventListener("change", checkMobile)
-      return () => mql.removeEventListener("change", checkMobile)
+      mql.addEventListener("change", (e) => setIsMobile(e.matches))
+      return () => mql.removeEventListener("change", (e) => setIsMobile(e.matches))
     } else {
       // Fallback for older browsers
       window.addEventListener("resize", checkMobile)
@@ -29,6 +26,5 @@ export function useIsMobile() {
     }
   }, [])
 
-  // Default to desktop if not yet determined (during SSR or initial load)
-  return isMobile === undefined ? false : isMobile
+  return isMobile
 }

@@ -1,7 +1,10 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Faq = () => {
+  const isMobile = useIsMobile();
+  
   const faqs = [
     {
       question: "Vocês fazem gestão de resíduos?",
@@ -30,11 +33,11 @@ export const Faq = () => {
   ];
   
   return (
-    <section className="py-16 bg-gray-50" id="faq">
+    <section className="py-12 md:py-16 bg-gray-50" id="faq">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-gray-800">Perguntas Frequentes</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-800">Perguntas Frequentes</h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Tire suas dúvidas sobre nossos serviços
           </p>
         </div>
@@ -42,11 +45,11 @@ export const Faq = () => {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 mb-4 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 bg-white hover:bg-gray-50 text-gray-800 hover:text-eco-700">
+              <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 mb-3 md:mb-4 rounded-lg overflow-hidden">
+                <AccordionTrigger className="px-4 md:px-6 py-3 md:py-4 bg-white hover:bg-gray-50 text-gray-800 hover:text-eco-700 text-sm md:text-base">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 py-4 bg-white text-gray-600">
+                <AccordionContent className="px-4 md:px-6 py-3 md:py-4 bg-white text-gray-600 text-xs md:text-sm">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
