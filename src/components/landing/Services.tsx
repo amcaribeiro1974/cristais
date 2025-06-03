@@ -40,7 +40,7 @@ export const Services = () => {
   const industrialServices = [
     {
       title: "Gestão de Resíduos Industriais",
-      description: "Atendemos conforme legislação CONAMA 313, para óleo, graxa, tintas e fluídos contaminados.",
+      description: "Atendemos conforme legislação CONAMA 313/2002, para óleo, graxa, tintas e fluídos contaminados.",
       icon: Factory,
       details: [
         "Tambores metálicos (200L)",
