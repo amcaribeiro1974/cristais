@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { Instagram, Facebook, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import { Instagram, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Footer = () => {
@@ -23,13 +22,18 @@ export const Footer = () => {
               estaduais e municipais.
             </p>
             <div className="flex space-x-4 justify-center sm:justify-start">
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a 
+                href="https://instagram.com/cristaisresiduos" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="mailto:comercial@cristais.eco.br" className="text-gray-400 hover:text-white transition">
+              <a 
+                href="mailto:comercial@cristais.eco.br" 
+                className="text-gray-400 hover:text-white transition"
+              >
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -73,10 +77,7 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start justify-center sm:justify-start">
                 <Phone className="h-5 w-5 text-eco-400 mr-2 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-400 text-sm md:text-base">98 99154-6787</p>
-                  <p className="text-gray-400 text-sm md:text-base">98 3012-5141</p>
-                </div>
+                <span className="text-gray-400 text-sm md:text-base">(98) 3303-8585</span>
               </li>
               <li className="flex items-start justify-center sm:justify-start">
                 <Mail className="h-5 w-5 text-eco-400 mr-2 mt-1 flex-shrink-0" />
