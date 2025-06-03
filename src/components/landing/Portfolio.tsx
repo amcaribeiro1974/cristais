@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Hospital, Pill, TestTube, GraduationCap, Utensils, Building } from "lucide-react";
 
 export const Portfolio = () => {
+  const whatsappUrl = "https://wa.me/559891753189";
+
   const clientCategories = [
     {
       id: "hospitais",
@@ -87,7 +89,10 @@ export const Portfolio = () => {
         </Tabs>
 
         <div className="text-center mt-12">
-          <Button className="bg-eco-600 hover:bg-eco-700 text-white px-6 py-2 text-lg">
+          <Button 
+            className="bg-eco-600 hover:bg-eco-700 text-white px-6 py-2 text-lg"
+            onClick={() => window.open(whatsappUrl, '_blank')}
+          >
             Solicite uma Proposta
           </Button>
         </div>

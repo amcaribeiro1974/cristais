@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export const CTA = () => {
+  const whatsappUrl = "https://wa.me/559891753189";
+
   return (
     <section className="py-16 bg-gradient-to-r from-eco-600 to-water-600 text-white">
       <div className="container mx-auto px-4">
@@ -15,7 +17,11 @@ export const CTA = () => {
             Solicite um orçamento sem compromisso.
           </p>
           <div className="flex justify-center">
-            <Button size="lg" className="bg-white text-eco-700 hover:bg-gray-100 px-8 text-lg">
+            <Button 
+              size="lg" 
+              className="bg-white text-eco-700 hover:bg-gray-100 px-8 text-lg"
+              onClick={() => window.open(whatsappUrl, '_blank')}
+            >
               Solicitar Orçamento
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

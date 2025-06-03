@@ -7,6 +7,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const whatsappUrl = "https://wa.me/559891753189";
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -50,7 +51,10 @@ export const Header = () => {
               <Phone className="h-4 w-4 text-eco-600 mr-2" />
               <span className="text-gray-700">(98) 3303-8585</span>
             </div>
-            <Button className="bg-eco-600 hover:bg-eco-700 text-white">
+            <Button 
+              className="bg-eco-600 hover:bg-eco-700 text-white"
+              onClick={() => window.open(whatsappUrl, '_blank')}
+            >
               Solicitar Orçamento
             </Button>
           </div>
@@ -84,7 +88,10 @@ export const Header = () => {
                 <Phone className="h-4 w-4 text-eco-600 mr-2" />
                 <span className="text-gray-700">(98) 3303-8585</span>
               </div>
-              <Button className="bg-eco-600 hover:bg-eco-700 text-white w-full">
+              <Button 
+                className="bg-eco-600 hover:bg-eco-700 text-white w-full"
+                onClick={() => window.open(whatsappUrl, '_blank')}
+              >
                 Solicitar Orçamento
               </Button>
             </nav>

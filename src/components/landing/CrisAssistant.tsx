@@ -5,6 +5,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 export const CrisAssistant = () => {
   const isMobile = useIsMobile();
+  const whatsappUrl = "https://wa.me/559891753189";
   
   const features = [
     {
@@ -65,7 +66,10 @@ export const CrisAssistant = () => {
                 ))}
               </div>
               <div className="mt-6 md:mt-8 text-center lg:text-left">
-                <Button className="bg-eco-600 hover:bg-eco-700 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg">
+                <Button 
+                  className="bg-eco-600 hover:bg-eco-700 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg"
+                  onClick={() => window.open(whatsappUrl, '_blank')}
+                >
                   Falar com a Cris
                 </Button>
               </div>
