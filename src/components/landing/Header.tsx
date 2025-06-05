@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
@@ -29,7 +28,7 @@ export const Header = () => {
             <img 
               src="/lovable-uploads/fe266214-e2af-4ac3-b463-bd473152d94d.png" 
               alt="Cristais Soluções Ambientais" 
-              className={isMobile ? "h-12" : "h-16"}
+              className={isMobile ? "h-16" : "h-20"}
             />
           </div>
           
