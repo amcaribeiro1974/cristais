@@ -10,6 +10,7 @@ import { Header } from "@/components/landing/Header";
 import { CTA } from "@/components/landing/CTA";
 import { Portfolio } from "@/components/landing/Portfolio";
 import { CrisAssistant } from "@/components/landing/CrisAssistant";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
         <Faq />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 };
