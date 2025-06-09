@@ -1,9 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export const CTA = () => {
-  const whatsappUrl = "https://wa.me/559891753189";
+  const whatsappUrl = "https://wa.me/559891546787";
 
   return (
     <section className="py-16 bg-gradient-to-r from-eco-600 to-water-600 text-white">

@@ -1,11 +1,10 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Hospital, Pill, TestTube, GraduationCap, Utensils, Building } from "lucide-react";
 
 export const Portfolio = () => {
-  const whatsappUrl = "https://wa.me/559891753189";
+  const whatsappUrl = "https://wa.me/559891546787";
 
   const clientCategories = [
     {

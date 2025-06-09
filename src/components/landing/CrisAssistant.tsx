@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Clock, Phone, Truck } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export const CrisAssistant = () => {
   const isMobile = useIsMobile();
-  const whatsappUrl = "https://wa.me/559891753189";
+  const whatsappUrl = "https://wa.me/559891546787";
   
   const features = [
     {

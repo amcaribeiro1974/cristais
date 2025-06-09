@@ -6,7 +6,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useIsMobile();
-  const whatsappUrl = "https://wa.me/559891753189";
+  const whatsappUrl = "https://wa.me/559891546787";
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

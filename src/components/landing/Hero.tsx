@@ -1,9 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
 export const Hero = () => {
-  const whatsappUrl = "https://wa.me/559891753189";
+  const whatsappUrl = "https://wa.me/559891546787";
 
   return (
     <section className="relative bg-gradient-to-b from-eco-100 to-white py-20 overflow-hidden">
